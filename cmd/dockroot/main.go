@@ -101,21 +101,10 @@ func createApp() (*cobra.Command, *globalOptions) {
 		ruriStopCmd(&opts),
 		ruriPidsCmd(&opts),
 		ruriRmCmd(&opts),
-		copyCmd(&opts),
-		deleteCmd(&opts),
-		generateSigstoreKeyCmd(),
 		inspectCmd(&opts),
 		layersCmd(&opts),
-		loginCmd(&opts),
-		logoutCmd(&opts),
 		manifestDigestCmd(),
-		proxyCmd(&opts),
-		syncCmd(&opts),
-		standaloneSignCmd(),
-		standaloneVerifyCmd(),
 		tagsCmd(&opts),
-		untrustedSignatureDumpCmd(),
-		//unpackCmd(&opts),
 	)
 	return rootCommand, &opts
 }
